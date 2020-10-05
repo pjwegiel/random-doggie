@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import Axios from 'axios';
+import './Photo.css';
 
-class Body extends Component {
-
+class Photo extends Component {
     state = {
         img: ''
     }
@@ -13,8 +14,8 @@ class Body extends Component {
                 this.setState({img: response.data.message});
             });
     }
-    
-    render() { 
+
+    render () {
         const clickHandler = () => {
             Axios.get('https://dog.ceo/api/breeds/image/random')
             .then(response => {
@@ -22,13 +23,13 @@ class Body extends Component {
             });
         }
         return (
-            <div style={{textAlign: 'center'}}>
-                <img className="photo" src={this.state.img} style={{width: "100%", position: 'absolute', left:'0'}} alt="A dog"></img>
+            <div className="container">
+                <img className="photo" src={this.state.img} alt="A dog"></img>
                 <br></br>
-                <button onClick={clickHandler} className="btn btn-primary" style={{position: 'fixed', bottom:'10%'}}>Random</button>
+                <button onClick={clickHandler} className="btn btn-primary">Random</button>
             </div>
-        );
+        )
     }
 }
 
-export default Body;
+export default withRouter(Photo);

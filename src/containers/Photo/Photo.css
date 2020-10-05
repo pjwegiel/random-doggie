@@ -1,0 +1,11 @@
+.photo {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+}
+
+.btn-primary {
+    position: fixed;
+    bottom: 10%;
+    left: 48vw;
+}
