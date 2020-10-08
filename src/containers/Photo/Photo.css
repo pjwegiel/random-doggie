@@ -6,7 +6,7 @@
 
 .button {
   position: fixed;
-  bottom: 8%;
+  bottom: 0%;
   left: 50vw;
   background: transparent;
   transform: translate(-50%, -50%);
@@ -15,4 +15,7 @@
 .button:focus {
   border: none;
   outline: none;
+}
+.paw-icon {
+  height: 15vh;
 }

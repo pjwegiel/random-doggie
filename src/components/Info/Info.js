@@ -1,48 +1,40 @@
 import React from 'react';
-
+import './Info.css';
 import { withRouter } from 'react-router-dom';
 
 const info = () => {
   return (
-    <div>
+    <div className="container">
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <div className="container">
-        <h2>Random doggie</h2>
-        <p>App created by Paweł Węgiel</p>
-        <p>
-          App allows you to render random photo of dog from{' '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://dog.ceo/dog-api/"
-          >
-            Dog API
-          </a>
-        </p>
-        <br />
-        <h4>Technologies used to build app:</h4>
-        <ul>
-          <li>React</li>
-          <li>react-router-dom</li>
-          <li>axios</li>
-          <li>bootsrap</li>
-        </ul>
-        <br />
-        <p>
-          Full project directory available{' '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/pjwegiel/random-doggie"
-          >
-            here
-          </a>
-        </p>
-      </div>
+      <h2>Random doggie</h2>
+      <p>App created by Paweł Węgiel with React.js</p>
+      <p>
+        App allows you to render random photo of dog from{' '}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://dog.ceo/dog-api/"
+        >
+          Dog API
+        </a>
+      </p>
+      <p>Libraries used to make this app:</p>
+      <ul>
+        <li>react-router-dom</li>
+        <li>axios</li>
+      </ul>
+      <p>
+        Full project directory available{' '}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/pjwegiel/random-doggie"
+        >
+          here
+        </a>
+      </p>
     </div>
   );
 };

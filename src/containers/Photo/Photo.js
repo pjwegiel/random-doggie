@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import Axios from 'axios';
 import './Photo.css';
-import paw from '../../assets/wetransfer-7e1d69/Untitled (2)/Union-1.png';
+import paw from '../../assets/paw-icon.png';
 
 class Photo extends Component {
   state = {
@@ -22,15 +22,15 @@ class Photo extends Component {
       });
     };
     return (
-      <div className="container">
+      <div>
         <img className="photo" src={this.state.img} alt="A dog"></img>
-        <br></br>
+        <br />
         <button className="button">
           <img
+            className="paw-icon"
             src={paw}
             alt="Random!"
             onClick={clickHandler}
-            style={{ height: '10vh' }}
           />
         </button>
       </div>
